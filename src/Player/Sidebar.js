@@ -5,8 +5,11 @@ import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import HomeIcon from '@mui/icons-material/Home';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import SearchIcon from '@mui/icons-material/Search';
+import { useDataValues } from '../DataLayer'
+import { useContext } from 'react';
 
 export const Sidebar=()=>{
+    const [{playlists}]=useDataValues()
     return (
         <div className='sidebar'>
             <img src={logo} alt="" />
@@ -17,9 +20,9 @@ export const Sidebar=()=>{
             <br />
             <strong className='sidebar-title'>Playlists</strong>
             <hr />
-            <SidebarOption title="Hindi Top"/>
-            <SidebarOption title="Chil-Lofi"/>
-            <SidebarOption title="Trending Now"/>
+            {playlists.items?.map((item)=>(
+                <SidebarOption title={item?.name}/>
+            ))}
         </div>
     )
 }

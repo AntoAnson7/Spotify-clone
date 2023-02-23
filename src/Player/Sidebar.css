@@ -9,14 +9,16 @@
 }
 
 .sidebar img{
-    width: 120px;
+    width: 130px;
     padding: 10px;
     padding-top: 20px;
+    margin-bottom: 25px;
+    margin-top: 5px;
 }
 
 .sidebar-options{
     color: gray;
-    height: 40px;
+    height: 30px;
     cursor: pointer;
     padding: 5px;
     padding-left: 10px;
@@ -24,13 +26,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-weight: 545;
 }
 
 .sidebar-options:hover{
     color: white;
 }
 .sidebar-title{
-    margin-left: 10px;
+    margin-left: 15px;
     padding: 5px;
     font-size: 14.5px;
     letter-spacing: 1.2px;
