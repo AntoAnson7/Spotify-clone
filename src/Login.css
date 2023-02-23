@@ -1,0 +1,20 @@
+.login-screen{
+    background-color: black;
+    overflow-y: hidden;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.login-screen img{
+    width: 30rem;
+}
+
+.login-screen a{
+    padding: 20px;
+    background-color: #1db954;
+    color: white;
+    border-radius: 99px;
+    border: none;
+    font-weight: 700;
+    text-decoration: none;
+}
